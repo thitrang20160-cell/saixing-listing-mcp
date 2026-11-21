@@ -1,0 +1,16 @@
+# Smithery 远程 MCP 服务器配置（塞星铺货执行 MCP / Saixing Listing MCP）
+# 服务为远程 Streamable HTTP，无需本地安装；服务端源码不开源，本仓库仅作说明与登记。
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: "塞星 MCP 租户 Key（调用必填）：在 https://bind.safesellai.com/saixing-mcp/bind 用塞星账号登录后自助签发。无 Key 可 initialize / tools/list 浏览工具。"
+  exampleConfig:
+    apiKey: ""
+# 远程端点信息（Smithery 远程服务器登记时填写）
+# url: https://bind.safesellai.com/saixing-mcp/mcp
+# transport: streamable-http
+# auth header: Authorization: Bearer <apiKey>
